@@ -1,0 +1,41 @@
+.splitpanes {
+    background-color: white;
+
+    &__pane {
+        box-shadow: none;
+    }
+
+    &__splitter {
+        background-color: #ccc;
+        position: relative;
+    }
+
+    &__splitter:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        transition: 0.4s;
+    }
+
+    &--vertical > &__splitter:before {
+        left: -5px;
+        right: -5px;
+    }
+
+    &--horizontal > &__splitter:before {
+        top: -5px;
+        bottom: -5px;
+    }
+
+    &__splitter:hover:before {
+        background-color: rgba(99, 99, 99, 0.2);
+        z-index: 1000;
+    }
+}
+
+.splitpanes--vertical .splitpanes__pane {
+    transition: none;
+}

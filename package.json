@@ -1,0 +1,35 @@
+{
+  "name": "three-model-editor",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@types/three": "^0.163.0",
+    "@unocss/extractor-pug": "^0.59.2",
+    "@vitejs/plugin-vue-jsx": "^3.1.0",
+    "naive-ui": "^2.38.1",
+    "pinia": "^2.1.7",
+    "pug": "^3.0.2",
+    "three": "^0.163.0",
+    "three-mesh-bvh": "^0.7.4",
+    "unocss": "^0.59.2",
+    "vue": "^3.4.21",
+    "vue-router": "^4.3.0"
+  },
+  "devDependencies": {
+    "@types/three": "^0.163.0",
+    "@vitejs/plugin-vue": "^5.0.4",
+    "dat.gui": "^0.7.9",
+    "i": "^0.3.7",
+    "npm": "^10.5.2",
+    "sass": "^1.75.0",
+    "typescript": "^5.2.2",
+    "vite": "^5.2.0",
+    "vue-tsc": "^2.0.6"
+  }
+}
